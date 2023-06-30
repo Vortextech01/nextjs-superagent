@@ -17,7 +17,7 @@ export default function Home() {
   const onSubmit = useCallback(async (values) => {
     const { message } = values;
     const newMessage = { type: 'user', content: message };
-    setConversation([...conversation, newMessage]);
+    setConversation([newMessage, ...conversation]);
 
     setMessage(message);
     setAiResponse();
@@ -29,7 +29,7 @@ export default function Home() {
     });
 
     const newResponse = { type: 'ai', content: data };
-    setConversation([...conversation, newResponse]);
+    setConversation([newResponse, ...conversation]);
 
     setAiResponse(data);
   }, [conversation]);
@@ -89,4 +89,3 @@ export default function Home() {
       </form>
     </main>
   );
-}
