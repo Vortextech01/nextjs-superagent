@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex flex-col space-y-7">
         <div className="z-10 w-full mx-auto items-start justify-center font-mono text-md lg:flex">
           <p className="flex w-full align-center justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-            Powered by Sapiens IA
+            Powered by SapiensIA
           </p>
         </div>
         <div className="p-2 items-center bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
