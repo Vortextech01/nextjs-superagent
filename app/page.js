@@ -22,7 +22,7 @@ export default function Home() {
     const { data } = await superagent.agents().predict({
       id: process.env.NEXT_PUBLIC_AGENT_ID,
       input: { input: message },
-      has_streaming: false,
+      has_streaming: true,
     });
 
     setAiResponse(data);
